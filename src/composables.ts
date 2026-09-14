@@ -177,7 +177,7 @@ export function usePublication() {
   ): Promise<Publication> {
     const baseName = resource.name.replace(/\.ocform$/, '')
     const folder = await createUnique(
-      $gettext('%{name} – responses', { name: baseName }),
+      `.${$gettext('%{name} – responses', { name: baseName })}`,
       '',
       (name) =>
         clientService.webdav.createFolder(space, { path: urlJoin(parentPath(resource.path), name) })

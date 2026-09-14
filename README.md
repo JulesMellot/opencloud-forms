@@ -183,6 +183,10 @@ The suite creates isolated temporary users and removes them when it finishes.
 
 ## Packaging notes
 
+New response folders have a leading dot (for example `.Survey – responses`) so OpenCloud
+can hide them when **Show hidden files** is disabled. Existing response folders are not renamed
+automatically. The response spreadsheet keeps its normal, visible filename.
+
 Responses remain normal OpenCloud files. Stopping publication removes the technical share
 links used by Forms but deliberately keeps the response folder and existing response data.
 The generated spreadsheet is a projection of the JSON responses and is overwritten on each
