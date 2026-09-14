@@ -38,7 +38,6 @@ Deploy the extension and service together. The service now also requires `l10n/t
 
 ## Validation and limits
 
-Unit, server, translation and Chromium browser tests cover the three languages. Full end-to-end
-installation and integration against a real OpenCloud instance have not yet been verified for
-this release. The extension targets the OpenCloud Web 7.4 SDK; compatibility with every
+Unit, server, translation and Chromium browser tests cover the three languages. The maintainer has also manually validated this release on their OpenCloud instance.
+This manual validation does not establish compatibility with every OpenCloud installation. The extension targets the OpenCloud Web 7.4 SDK; compatibility with every
 OpenCloud release is not guaranteed. English remains available as a fallback.

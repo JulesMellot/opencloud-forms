@@ -4,6 +4,13 @@ OpenCloud Forms adds a **Form** entry to the **New** menu and stores forms as na
 `.ocform` files. A form can be shared with signed-in OpenCloud users or published through
 an anonymous link.
 
+[Download v1.2.0](https://github.com/JulesMellot/opencloud-forms/releases/tag/v1.2.0) ·
+[Installation](#build-and-install-the-web-extension) · [Screenshots](#screenshots)
+
+Version **1.2.0 is published**. The maintainer has manually validated the extension on their
+OpenCloud instance. The screenshots below show that installation with the French interface.
+Automated checks also cover the schema, server, translations and public-page browser flows.
+
 ## Features
 
 - 12 question types, including file uploads
@@ -31,9 +38,39 @@ and custom confirmation messages remain in the language chosen by their author.
 
 ## Downloads
 
-Download **both** `forms.zip` and `forms-server.zip` from [GitHub Releases](https://github.com/JulesMellot/opencloud-forms/releases).
+The published version is [v1.2.0](https://github.com/JulesMellot/opencloud-forms/releases/tag/v1.2.0).
+Install **both** the Web extension (`forms.zip`) and the companion service (`forms-server.zip`).
+If prebuilt ZIPs are not listed among the release assets, download the source archive and run
+`npm ci` followed by `npm run package` to generate them.
 Installation is performed by the OpenCloud administrator, once per instance.
-See [CHANGELOG.md](CHANGELOG.md) for release notes and validation limits.
+See [CHANGELOG.md](CHANGELOG.md) for release notes. Manual validation on the maintainer’s instance
+does not establish compatibility with every OpenCloud version.
+
+## Screenshots
+
+### Form editor
+
+Create questions, choose answer types and configure required fields and validation limits.
+
+![Form editor in OpenCloud with question types and validation settings](docs/screenshots/questions.png)
+
+### Responses and spreadsheet
+
+View collected responses and manage the associated OpenDocument spreadsheet.
+
+![Responses tab with spreadsheet controls and the response list](docs/screenshots/responses.png)
+
+### Publication settings
+
+Manage the public link, control who can respond and customize the confirmation message.
+
+![Publication settings with public sharing and response access controls](docs/screenshots/settings.png)
+
+### Public form
+
+Respondents can open a standalone form without navigating the OpenCloud file interface.
+
+![Standalone public form with required fields and long-text answers](docs/screenshots/public-form.png)
 
 ## Architecture
 

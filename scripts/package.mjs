@@ -28,6 +28,7 @@ try {
     'l10n/translations.json',
     'package.json',
     'README.md',
+    'docs/screenshots',
     'LICENSE'
   ])
   archive(`opencloud-forms-${version}.zip`, [
@@ -40,6 +41,7 @@ try {
     'package.json',
     'package-lock.json',
     'README.md',
+    'docs/screenshots',
     'CHANGELOG.md',
     'LICENSE',
     'vite.config.ts',
