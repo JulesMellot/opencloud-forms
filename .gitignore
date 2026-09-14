@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+test-results/
+.__mf__temp/
+*.log
+
+*.zip
+.DS_Store
+.env
+.env.*
+SHA256SUMS
